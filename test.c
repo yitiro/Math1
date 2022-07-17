@@ -64,8 +64,8 @@ void q2_3() {
     mpz_t temp1, temp2;
     mpz_init(temp1);
     mpz_init(temp2);
-    for (int i = 1; i < NUM; i ++) {
-        for (int j = 1; j < NUM; j ++) {
+    for (int i = 1; i < NUM; i += 2) {
+        for (int j = 2; j < NUM; j += 2) {
             // compute a[i]^2 + 2a[j]^2
             mpz_mul(temp1, a[i], a[i]);
             mpz_mul(temp2, a[j], a[j]);
